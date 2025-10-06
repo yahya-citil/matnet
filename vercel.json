@@ -1,18 +1,13 @@
 {
   "version": 2,
-  "functions": {
-    "server/index.js": {
-      "runtime": "@vercel/node@3.0.0"
-    }
-  },
   "routes": [
     {
       "src": "/api/(.*)",
-      "dest": "/server/index.js"
+      "dest": "/api/server.js"
     },
     {
       "src": "/uploads/(.*)",
-      "dest": "/server/index.js"
+      "dest": "/api/server.js"
     },
     {
       "src": "/(.*)",
