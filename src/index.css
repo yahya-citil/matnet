@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+/* Base site styles */
+html, body, #root {
+  height: 100%;
+}
+body {
+  @apply bg-white text-gray-800 antialiased;
+}
+
+.container {
+  @apply max-w-6xl mx-auto px-4;
+}
